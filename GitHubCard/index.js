@@ -3,6 +3,17 @@
            https://api.github.com/users/<your name>
 */
 
+//Make a request for a user with an ID
+axios.get("https://api.github.com/users/Amber-Pittman")
+  .then((response) => {
+    //network request finished
+    console.log(response);
+  })
+  .catch((error) => {
+    console.log("Network request unsuccessful");
+    console.log(error);
+  })
+
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
    data in order to use it to build your component function 
